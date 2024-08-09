@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App</title>
+    <link rel="stylesheet" href="./output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="m-auto max-w-5xl min-w-96">
+        <header class="bg-green-500 py-5 px-10 flex justify-between">
+            <h1 class="text-white text-2xl sm:text-4xl font-bold">Item Lister</h1>
+            <input type="search" class="px-2 py-1 sm:px-4 rounded outline-none" placeholder="Search items..."
+                id="search-input" />
+        </header>
+        <section class="border-2 p-5">
+            <div class="m-auto border-2 p-5">
+                <h2 class="font-bold text-2xl">Add Items</h2>
+                <form action="" class="pt-5" id="form">
+                    <input type="text" name="" id="text-box"
+                        class="border-2 mr-5 mb-5 p-2 focus:outline-2 focus:outline-orange-500" />
+                    <input type="submit" value="Add" class="py-2 px-4 bg-black text-white rounded" />
+                </form>
+                <h3 class="text-2xl font-semibold my-4">Items</h3>
+                <ul id="items">
+                    <li class="border-2 py-2 px-4 mb-3 relative list-item">
+                        Item1
+                        <button class="px-2 py-[1px] rounded text-white absolute right-4 top-1 bg-red-700 cancel">
+                            x
+                        </button>
+                    </li>
+                    <li class="border-2 py-2 px-4 mb-3 relative list-item">
+                        Item2
+                        <button class="px-2 py-[1px] rounded text-white absolute right-4 top-1 bg-red-700 cancel">
+                            x
+                        </button>
+                    </li>
+                    <li class="border-2 py-2 px-4 mb-3 relative list-item">
+                        Item3
+                        <button class="px-2 py-[1px] rounded text-white absolute right-4 top-1 bg-red-700 cancel">
+                            x
+                        </button>
+                    </li>
+                    <li class="border-2 py-2 px-4 mb-3 relative list-item">
+                        Item4
+                        <button class="px-2 py-[1px] rounded text-white absolute right-4 top-1 bg-red-700 cancel">
+                            x
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <script src="./dom.js"></script>
+        </section>
+    </section>
+</body>
+
+</html>
